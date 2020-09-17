@@ -34,13 +34,13 @@ driver = webdriver.Chrome()
 
 driver.get("https://www.gmail.com")
 einput = driver.find_element_by_id("identifierId")
-einput.send_keys("vaishnav.trv17it057@gecbh.ac.in")
+einput.send_keys("your email id")
 print(einput.is_displayed()) #return true or false based on elements status
 print(einput.is_enabled())  #return true or false # is_selected to check the radio button
 time.sleep(3)
 driver.find_element_by_id("identifierNext").click()
 time.sleep(5)
-driver.find_element_by_xpath("//*[@id='password']/div[1]/div/div[1]/input").send_keys("V@ishnav@123")
+driver.find_element_by_xpath("//*[@id='password']/div[1]/div/div[1]/input").send_keys("your password")
 driver.find_element_by_id("passwordNext").click()
 
 
